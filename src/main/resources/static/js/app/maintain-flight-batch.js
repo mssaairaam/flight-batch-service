@@ -6,6 +6,7 @@ var flightBatchGrid = null;
 var columns = [ {
     orderable: false,
     className: 'select-checkbox',
+    width: '10%',
     targets:   0
 }, {
 	title : "Flight Number",

@@ -5,6 +5,7 @@ import org.springframework.data.jpa.datatables.mapping.DataTablesInput;
 import org.springframework.data.jpa.datatables.mapping.DataTablesOutput;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,7 +20,13 @@ public class FlightBatchController {
 	FlightBatchService flightBatchService;
 
 	@RequestMapping("/")
-	public String login(Model model) {
+	public String login(ModelMap modelMap) {
+		return "login";
+	}
+
+	@RequestMapping("/logout")
+	public String logout(ModelMap modelMap) {
+		modelMap.addAttribute("message", "You are logged out Successfully !");
 		return "login";
 	}
 	

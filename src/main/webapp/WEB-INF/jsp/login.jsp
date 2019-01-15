@@ -12,7 +12,6 @@
 <script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/app/login.js"></script>
 </head>
 <body>
 	<div id="login-div" align="center">
@@ -33,11 +32,11 @@
 				<tr style="height: 23px;"></tr>
 				<tr>
 					<td style="text-align: right;">
-						<label for="user-id">User Id : </label></td>
+						<label for="username">User Name : </label></td>
 					<td width="20px">
 					</td>
 					<td>
-						<input type="text" id="user-id"
+						<input type="text" name="username" id="username"
 							placeholder="Enter User Id" required="required"></td>
 					<td width="20px">
 					</td>
@@ -49,7 +48,7 @@
 					<td width="20px">
 					</td>
 					<td>
-						<input type="password" id="password"
+						<input type="password" name="password" id="password"
 							placeholder="Enter Password" required="required"></td>
 					<td width="20px">
 					</td>

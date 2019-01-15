@@ -24,6 +24,11 @@
 				<td align="center" style="background-color: #337ab7; border-color: #2e6da4;
 				color: #fff; font-size: 30px;"
 					colspan="6">Maintain Flight Batch</td>
+				<td width="20px">
+				</td>
+				<td>
+					<a href="/logout">Logout</a>
+				</td>
 			</tr>
 			<tr style="height: 23px;"></tr>
 			<tr>
