@@ -1,5 +1,5 @@
 # flight-batch-service
-Creates and maintains Flight Batch details.
+A Web application, which creates and maintains Flight Batch details.
 
 Setup
 -----
