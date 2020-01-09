@@ -1,6 +1,6 @@
-package com.tslservices.flight.repositories.util;
+package com.flightservices.flight.repositories.util;
 
-import com.tslservices.flight.util.Constants;
+import com.flightservices.flight.util.Constants;
 
 public class FlightBatchRepositoryUtil {
 
@@ -13,7 +13,7 @@ public class FlightBatchRepositoryUtil {
 			columnName = Constants.SORT_BY_FLIGHT_NUMBER;
 			break;
 		case 2:
-			columnName = Constants.SORT_BY_FLIGHT_DATE;
+			columnName = Constants.SORT_BY_DEPARTURE_TIMESTAMP;
 			break;
 		case 3:
 			columnName = Constants.SORT_BY_DEPARTURE_CITY;
@@ -22,7 +22,7 @@ public class FlightBatchRepositoryUtil {
 			columnName = Constants.SORT_BY_ARRIVAL_CITY;
 			break;
 		case 5:
-			columnName = Constants.SORT_BY_ARRIVAL_TIME;
+			columnName = Constants.SORT_BY_ARRIVAL_TIMESTAMP;
 			break;
 		default:
 			columnName = Constants.SORT_BY_FLIGHT_NUMBER;

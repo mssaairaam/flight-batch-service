@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div id="login-div" align="center">
-		<form name="login" action="/authenticate" method="post">
+		<form name="login" action="/flight-batch-service/authenticate" method="post">
 			<table style="width: 30%; font-family: Calibri; font-size: 17px;">
 				<tr style="height: 20px;"></tr>
 				<tr height="25px" bordercolor="darkgreen"  class="table table-striped">

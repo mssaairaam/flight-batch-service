@@ -1,4 +1,4 @@
-package com.tslservices.flight.model;
+package com.flightservices.flight.model;
 
 public class User {
 	

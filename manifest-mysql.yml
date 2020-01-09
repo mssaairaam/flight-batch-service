@@ -1,0 +1,7 @@
+applications:
+  - name: flight-batch-service
+    instances: 1
+    buildpack: java_buildpack
+    path: target/flight-batch-service-0.0.1-SNAPSHOT.war
+    services:
+      - FlightBatchService

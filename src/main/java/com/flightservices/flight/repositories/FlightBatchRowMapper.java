@@ -1,11 +1,12 @@
-package com.tslservices.flight.repositories;
+package com.flightservices.flight.repositories;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.tslservices.flight.model.FlightBatchDetail;
+import com.flightservices.flight.model.FlightBatchDetail;
+import com.flightservices.flight.util.Constants;
 
 public class FlightBatchRowMapper implements RowMapper<FlightBatchDetail> {
 
@@ -15,12 +16,12 @@ public class FlightBatchRowMapper implements RowMapper<FlightBatchDetail> {
 		flightBatchDetail.setFlightNumber(rs.getString("FLIGHT_NUMBER"));
 		flightBatchDetail.setArrivalCity(rs.getString("DESTINATION"));
 		flightBatchDetail.setDepartureCity(rs.getString("ORIGIN"));
-		flightBatchDetail.setDepartureDateTime(rs.getString("RECEIVED_DATE"));
-		flightBatchDetail.setArrivalDateTime(rs.getString("ARRIVAL_DATE").split(" ")[0] 
-				+ " " 
-				+ rs.getString("ARRIVAL_TIME").split(" ")[0]);
-		flightBatchDetail.setFlightClosed("N");
+		flightBatchDetail.setDepartureDateTime(rs.getString("DEPARTURE_TIMESTAMP"));
+		flightBatchDetail.setArrivalDateTime(rs.getString("ARRIVAL_TIMESTAMP"));
+		flightBatchDetail.setFlightClosed(rs.getString("FLIGHT_CLOSED"));
+		flightBatchDetail.setAwbId(rs.getString("AWBID"));
+		flightBatchDetail.setAwb(rs.getString("AWB"));
+		flightBatchDetail.setSelection(Constants.UPDATE);
 		return flightBatchDetail;
 	}
-
 }

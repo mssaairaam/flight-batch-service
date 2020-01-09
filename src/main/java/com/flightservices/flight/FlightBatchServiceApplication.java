@@ -1,4 +1,4 @@
-package com.tslservices.flight;
+package com.flightservices.flight;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
