@@ -28,7 +28,7 @@
 				<td width="20px">
 				</td>
 				<td>
-					<a href="/flight-batch-service/v1m/logout">Logout</a>
+					<a href="/flight-batch-service/v1/logout">Logout</a>
 				</td>
 			</tr>
 			<tr style="height: 23px;"></tr>
