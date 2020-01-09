@@ -6,9 +6,9 @@ Setup
 1. Clone the repository.
 2. Setup the following tables in Microsoft SQL Server.
 
-  a. <code> [FlightNotificationEngine].[dbo].[USER] </code>
+    a. <code> [FlightNotificationEngine].[dbo].[USER] </code>
   
-  b. <code> [FlightNotificationEngine].[dbo].[T001_AWB_DTL] </code>
+    b. <code> [FlightNotificationEngine].[dbo].[T001_AWB_DTL] </code>
   
 3. Build the <code>.war</code> file by running the pom.xml.
 4. Run the application and hit the URL : <code>http:localhost:8083/flight-batch-service</code>
